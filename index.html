@@ -2,22 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>🧠 Flashcard Quiz</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>🧠 Flashcard Quiz</h1>
-    <p>Guess the answer before you click to flip the card!</p>
+  <h1>🇮🇳 India GK Flashcard Quiz</h1>
 
-    <div class="controls">
-      <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
-      <button onclick="shuffleCards()">🔀 Shuffle</button>
-    </div>
+  <div id="cardContainer"></div>
 
-    <div id="cardContainer"></div>
-  </div>
+  <button onclick="shuffleCards()">🔀 Shuffle</button>
+  <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
 
   <script src="script.js"></script>
 </body>
