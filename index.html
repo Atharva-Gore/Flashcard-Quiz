@@ -9,16 +9,11 @@
 <body>
   <div class="container">
     <h1>🧠 Flashcard Quiz</h1>
-
-    <div class="form">
-      <input type="text" id="question" placeholder="Enter Question" />
-      <input type="text" id="answer" placeholder="Enter Answer" />
-      <button onclick="addCard()">➕ Add Flashcard</button>
-    </div>
+    <p>Guess the answer before you click to flip the card!</p>
 
     <div class="controls">
       <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
-      <button onclick="clearCards()">🗑️ Clear All</button>
+      <button onclick="shuffleCards()">🔀 Shuffle</button>
     </div>
 
     <div id="cardContainer"></div>
