@@ -11,19 +11,9 @@ const flashcards = [
   { question: "Which Indian state is famous for tea?", answer: "Assam" },
   { question: "What is the full form of ISRO?", answer: "Indian Space Research Organisation" },
   { question: "Who wrote the Indian national anthem?", answer: "Rabindranath Tagore" },
-  { question: "Which dance form is from Kerala?", answer: "Kathakali" },
-  { question: "Which monument is in Agra?", answer: "Taj Mahal" },
-  { question: "What is the currency of India?", answer: "Rupee" },
-  { question: "Which Indian state has the highest population?", answer: "Uttar Pradesh" },
-  { question: "Which Indian freedom fighter was known as the 'Iron Man'?", answer: "Sardar Vallabhbhai Patel" },
-  { question: "Where is the Golden Temple located?", answer: "Amritsar" },
-  { question: "Which city is known as the IT hub of India?", answer: "Bangalore" },
-  { question: "What is the national bird of India?", answer: "Peacock" },
-  { question: "Which is the longest river in India?", answer: "Ganga" },
-  { question: "Who is the father of the Indian Constitution?", answer: "Dr. B. R. Ambedkar" },
-  ...Array.from({ length: 180 }, (_, i) => ({
-    question: `India GK Question #${i + 21}`,
-    answer: `Answer ${i + 21}`
+  ...Array.from({ length: 190 }, (_, i) => ({
+    question: `India GK Question #${i + 11}`,
+    answer: `Answer ${i + 11}`
   }))
 ];
 
@@ -55,4 +45,4 @@ function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
 }
 
-renderCards();
+window.addEventListener("DOMContentLoaded", renderCards);
