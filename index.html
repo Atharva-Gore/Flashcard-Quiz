@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🧠 Flashcard Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Flashcard Quiz</h1>
+
+    <div class="form">
+      <input type="text" id="question" placeholder="Enter Question" />
+      <input type="text" id="answer" placeholder="Enter Answer" />
+      <button onclick="addCard()">➕ Add Flashcard</button>
+    </div>
+
+    <div class="controls">
+      <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+      <button onclick="clearCards()">🗑️ Clear All</button>
+    </div>
+
+    <div id="cardContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
